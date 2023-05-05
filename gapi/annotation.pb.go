@@ -2,7 +2,7 @@
 // versions:
 // 	protoc-gen-go v1.30.0
 // 	protoc        v3.21.12
-// source: gapi/annonation.proto
+// source: gapi/annotation.proto
 
 package gapi
 
@@ -60,11 +60,11 @@ func (x FIELD_BIND) String() string {
 }
 
 func (FIELD_BIND) Descriptor() protoreflect.EnumDescriptor {
-	return file_gapi_annonation_proto_enumTypes[0].Descriptor()
+	return file_gapi_annotation_proto_enumTypes[0].Descriptor()
 }
 
 func (FIELD_BIND) Type() protoreflect.EnumType {
-	return &file_gapi_annonation_proto_enumTypes[0]
+	return &file_gapi_annotation_proto_enumTypes[0]
 }
 
 func (x FIELD_BIND) Number() protoreflect.EnumNumber {
@@ -73,7 +73,7 @@ func (x FIELD_BIND) Number() protoreflect.EnumNumber {
 
 // Deprecated: Use FIELD_BIND.Descriptor instead.
 func (FIELD_BIND) EnumDescriptor() ([]byte, []int) {
-	return file_gapi_annonation_proto_rawDescGZIP(), []int{0}
+	return file_gapi_annotation_proto_rawDescGZIP(), []int{0}
 }
 
 type CustomPattern struct {
@@ -88,7 +88,7 @@ type CustomPattern struct {
 func (x *CustomPattern) Reset() {
 	*x = CustomPattern{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_gapi_annonation_proto_msgTypes[0]
+		mi := &file_gapi_annotation_proto_msgTypes[0]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -101,7 +101,7 @@ func (x *CustomPattern) String() string {
 func (*CustomPattern) ProtoMessage() {}
 
 func (x *CustomPattern) ProtoReflect() protoreflect.Message {
-	mi := &file_gapi_annonation_proto_msgTypes[0]
+	mi := &file_gapi_annotation_proto_msgTypes[0]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -114,7 +114,7 @@ func (x *CustomPattern) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use CustomPattern.ProtoReflect.Descriptor instead.
 func (*CustomPattern) Descriptor() ([]byte, []int) {
-	return file_gapi_annonation_proto_rawDescGZIP(), []int{0}
+	return file_gapi_annotation_proto_rawDescGZIP(), []int{0}
 }
 
 func (x *CustomPattern) GetMethod() string {
@@ -153,7 +153,7 @@ type Http struct {
 func (x *Http) Reset() {
 	*x = Http{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_gapi_annonation_proto_msgTypes[1]
+		mi := &file_gapi_annotation_proto_msgTypes[1]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -166,7 +166,7 @@ func (x *Http) String() string {
 func (*Http) ProtoMessage() {}
 
 func (x *Http) ProtoReflect() protoreflect.Message {
-	mi := &file_gapi_annonation_proto_msgTypes[1]
+	mi := &file_gapi_annotation_proto_msgTypes[1]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -179,7 +179,7 @@ func (x *Http) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Http.ProtoReflect.Descriptor instead.
 func (*Http) Descriptor() ([]byte, []int) {
-	return file_gapi_annonation_proto_rawDescGZIP(), []int{1}
+	return file_gapi_annotation_proto_rawDescGZIP(), []int{1}
 }
 
 func (m *Http) GetPattern() isHttp_Pattern {
@@ -292,14 +292,14 @@ func (*Http_Patch) isHttp_Pattern() {}
 
 func (*Http_Custom) isHttp_Pattern() {}
 
-var file_gapi_annonation_proto_extTypes = []protoimpl.ExtensionInfo{
+var file_gapi_annotation_proto_extTypes = []protoimpl.ExtensionInfo{
 	{
 		ExtendedType:  (*descriptorpb.MethodOptions)(nil),
 		ExtensionType: (*Http)(nil),
 		Field:         1143202,
 		Name:          "gapi.http",
 		Tag:           "bytes,1143202,opt,name=http",
-		Filename:      "gapi/annonation.proto",
+		Filename:      "gapi/annotation.proto",
 	},
 	{
 		ExtendedType:  (*descriptorpb.ServiceOptions)(nil),
@@ -307,7 +307,7 @@ var file_gapi_annonation_proto_extTypes = []protoimpl.ExtensionInfo{
 		Field:         2143202,
 		Name:          "gapi.server",
 		Tag:           "bytes,2143202,opt,name=server",
-		Filename:      "gapi/annonation.proto",
+		Filename:      "gapi/annotation.proto",
 	},
 	{
 		ExtendedType:  (*descriptorpb.ServiceOptions)(nil),
@@ -315,15 +315,15 @@ var file_gapi_annonation_proto_extTypes = []protoimpl.ExtensionInfo{
 		Field:         2143203,
 		Name:          "gapi.default_handler",
 		Tag:           "bytes,2143203,opt,name=default_handler",
-		Filename:      "gapi/annonation.proto",
+		Filename:      "gapi/annotation.proto",
 	},
 	{
 		ExtendedType:  (*descriptorpb.ServiceOptions)(nil),
-		ExtensionType: (*int32)(nil),
+		ExtensionType: (*int64)(nil),
 		Field:         2143204,
 		Name:          "gapi.default_timeout",
 		Tag:           "varint,2143204,opt,name=default_timeout",
-		Filename:      "gapi/annonation.proto",
+		Filename:      "gapi/annotation.proto",
 	},
 	{
 		ExtendedType:  (*descriptorpb.ServiceOptions)(nil),
@@ -331,7 +331,7 @@ var file_gapi_annonation_proto_extTypes = []protoimpl.ExtensionInfo{
 		Field:         2143205,
 		Name:          "gapi.path_prefix",
 		Tag:           "bytes,2143205,opt,name=path_prefix",
-		Filename:      "gapi/annonation.proto",
+		Filename:      "gapi/annotation.proto",
 	},
 	{
 		ExtendedType:  (*descriptorpb.ServiceOptions)(nil),
@@ -339,7 +339,7 @@ var file_gapi_annonation_proto_extTypes = []protoimpl.ExtensionInfo{
 		Field:         2143206,
 		Name:          "gapi.use",
 		Tag:           "bytes,2143206,rep,name=use",
-		Filename:      "gapi/annonation.proto",
+		Filename:      "gapi/annotation.proto",
 	},
 	{
 		ExtendedType:  (*descriptorpb.FieldOptions)(nil),
@@ -347,7 +347,7 @@ var file_gapi_annonation_proto_extTypes = []protoimpl.ExtensionInfo{
 		Field:         4143202,
 		Name:          "gapi.bind",
 		Tag:           "varint,4143202,opt,name=bind,enum=gapi.FIELD_BIND",
-		Filename:      "gapi/annonation.proto",
+		Filename:      "gapi/annotation.proto",
 	},
 	{
 		ExtendedType:  (*descriptorpb.FieldOptions)(nil),
@@ -355,7 +355,7 @@ var file_gapi_annonation_proto_extTypes = []protoimpl.ExtensionInfo{
 		Field:         4143203,
 		Name:          "gapi.alias",
 		Tag:           "bytes,4143203,opt,name=alias",
-		Filename:      "gapi/annonation.proto",
+		Filename:      "gapi/annotation.proto",
 	},
 	{
 		ExtendedType:  (*descriptorpb.FieldOptions)(nil),
@@ -363,7 +363,7 @@ var file_gapi_annonation_proto_extTypes = []protoimpl.ExtensionInfo{
 		Field:         4143204,
 		Name:          "gapi.omit_empty",
 		Tag:           "varint,4143204,opt,name=omit_empty",
-		Filename:      "gapi/annonation.proto",
+		Filename:      "gapi/annotation.proto",
 	},
 	{
 		ExtendedType:  (*descriptorpb.FieldOptions)(nil),
@@ -371,7 +371,7 @@ var file_gapi_annonation_proto_extTypes = []protoimpl.ExtensionInfo{
 		Field:         4143205,
 		Name:          "gapi.raw_data",
 		Tag:           "varint,4143205,opt,name=raw_data",
-		Filename:      "gapi/annonation.proto",
+		Filename:      "gapi/annotation.proto",
 	},
 	{
 		ExtendedType:  (*descriptorpb.FieldOptions)(nil),
@@ -379,48 +379,48 @@ var file_gapi_annonation_proto_extTypes = []protoimpl.ExtensionInfo{
 		Field:         4143206,
 		Name:          "gapi.embed",
 		Tag:           "varint,4143206,opt,name=embed",
-		Filename:      "gapi/annonation.proto",
+		Filename:      "gapi/annotation.proto",
 	},
 }
 
 // Extension fields to descriptorpb.MethodOptions.
 var (
 	// optional gapi.Http http = 1143202;
-	E_Http = &file_gapi_annonation_proto_extTypes[0]
+	E_Http = &file_gapi_annotation_proto_extTypes[0]
 )
 
 // Extension fields to descriptorpb.ServiceOptions.
 var (
 	// optional string server = 2143202;
-	E_Server = &file_gapi_annonation_proto_extTypes[1]
+	E_Server = &file_gapi_annotation_proto_extTypes[1]
 	// optional string default_handler = 2143203;
-	E_DefaultHandler = &file_gapi_annonation_proto_extTypes[2]
-	// optional int32 default_timeout = 2143204;
-	E_DefaultTimeout = &file_gapi_annonation_proto_extTypes[3]
+	E_DefaultHandler = &file_gapi_annotation_proto_extTypes[2]
+	// optional int64 default_timeout = 2143204;
+	E_DefaultTimeout = &file_gapi_annotation_proto_extTypes[3]
 	// optional string path_prefix = 2143205;
-	E_PathPrefix = &file_gapi_annonation_proto_extTypes[4]
+	E_PathPrefix = &file_gapi_annotation_proto_extTypes[4]
 	// repeated string use = 2143206;
-	E_Use = &file_gapi_annonation_proto_extTypes[5]
+	E_Use = &file_gapi_annotation_proto_extTypes[5]
 )
 
 // Extension fields to descriptorpb.FieldOptions.
 var (
 	// optional gapi.FIELD_BIND bind = 4143202;
-	E_Bind = &file_gapi_annonation_proto_extTypes[6]
+	E_Bind = &file_gapi_annotation_proto_extTypes[6]
 	// optional string alias = 4143203;
-	E_Alias = &file_gapi_annonation_proto_extTypes[7]
+	E_Alias = &file_gapi_annotation_proto_extTypes[7]
 	// optional bool omit_empty = 4143204;
-	E_OmitEmpty = &file_gapi_annonation_proto_extTypes[8]
+	E_OmitEmpty = &file_gapi_annotation_proto_extTypes[8]
 	// optional bool raw_data = 4143205;
-	E_RawData = &file_gapi_annonation_proto_extTypes[9]
+	E_RawData = &file_gapi_annotation_proto_extTypes[9]
 	// optional bool embed = 4143206;
-	E_Embed = &file_gapi_annonation_proto_extTypes[10]
+	E_Embed = &file_gapi_annotation_proto_extTypes[10]
 )
 
-var File_gapi_annonation_proto protoreflect.FileDescriptor
+var File_gapi_annotation_proto protoreflect.FileDescriptor
 
-var file_gapi_annonation_proto_rawDesc = []byte{
-	0x0a, 0x15, 0x67, 0x61, 0x70, 0x69, 0x2f, 0x61, 0x6e, 0x6e, 0x6f, 0x6e, 0x61, 0x74, 0x69, 0x6f,
+var file_gapi_annotation_proto_rawDesc = []byte{
+	0x0a, 0x15, 0x67, 0x61, 0x70, 0x69, 0x2f, 0x61, 0x6e, 0x6e, 0x6f, 0x74, 0x61, 0x74, 0x69, 0x6f,
 	0x6e, 0x2e, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x12, 0x04, 0x67, 0x61, 0x70, 0x69, 0x1a, 0x20, 0x67,
 	0x6f, 0x6f, 0x67, 0x6c, 0x65, 0x2f, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x62, 0x75, 0x66, 0x2f, 0x64,
 	0x65, 0x73, 0x63, 0x72, 0x69, 0x70, 0x74, 0x6f, 0x72, 0x2e, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x22,
@@ -466,7 +466,7 @@ var file_gapi_annonation_proto_rawDesc = []byte{
 	0x74, 0x69, 0x6d, 0x65, 0x6f, 0x75, 0x74, 0x12, 0x1f, 0x2e, 0x67, 0x6f, 0x6f, 0x67, 0x6c, 0x65,
 	0x2e, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x62, 0x75, 0x66, 0x2e, 0x53, 0x65, 0x72, 0x76, 0x69, 0x63,
 	0x65, 0x4f, 0x70, 0x74, 0x69, 0x6f, 0x6e, 0x73, 0x18, 0xe4, 0xe7, 0x82, 0x01, 0x20, 0x01, 0x28,
-	0x05, 0x52, 0x0e, 0x64, 0x65, 0x66, 0x61, 0x75, 0x6c, 0x74, 0x54, 0x69, 0x6d, 0x65, 0x6f, 0x75,
+	0x03, 0x52, 0x0e, 0x64, 0x65, 0x66, 0x61, 0x75, 0x6c, 0x74, 0x54, 0x69, 0x6d, 0x65, 0x6f, 0x75,
 	0x74, 0x3a, 0x43, 0x0a, 0x0b, 0x70, 0x61, 0x74, 0x68, 0x5f, 0x70, 0x72, 0x65, 0x66, 0x69, 0x78,
 	0x12, 0x1f, 0x2e, 0x67, 0x6f, 0x6f, 0x67, 0x6c, 0x65, 0x2e, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x62,
 	0x75, 0x66, 0x2e, 0x53, 0x65, 0x72, 0x76, 0x69, 0x63, 0x65, 0x4f, 0x70, 0x74, 0x69, 0x6f, 0x6e,
@@ -501,20 +501,20 @@ var file_gapi_annonation_proto_rawDesc = []byte{
 }
 
 var (
-	file_gapi_annonation_proto_rawDescOnce sync.Once
-	file_gapi_annonation_proto_rawDescData = file_gapi_annonation_proto_rawDesc
+	file_gapi_annotation_proto_rawDescOnce sync.Once
+	file_gapi_annotation_proto_rawDescData = file_gapi_annotation_proto_rawDesc
 )
 
-func file_gapi_annonation_proto_rawDescGZIP() []byte {
-	file_gapi_annonation_proto_rawDescOnce.Do(func() {
-		file_gapi_annonation_proto_rawDescData = protoimpl.X.CompressGZIP(file_gapi_annonation_proto_rawDescData)
+func file_gapi_annotation_proto_rawDescGZIP() []byte {
+	file_gapi_annotation_proto_rawDescOnce.Do(func() {
+		file_gapi_annotation_proto_rawDescData = protoimpl.X.CompressGZIP(file_gapi_annotation_proto_rawDescData)
 	})
-	return file_gapi_annonation_proto_rawDescData
+	return file_gapi_annotation_proto_rawDescData
 }
 
-var file_gapi_annonation_proto_enumTypes = make([]protoimpl.EnumInfo, 1)
-var file_gapi_annonation_proto_msgTypes = make([]protoimpl.MessageInfo, 2)
-var file_gapi_annonation_proto_goTypes = []interface{}{
+var file_gapi_annotation_proto_enumTypes = make([]protoimpl.EnumInfo, 1)
+var file_gapi_annotation_proto_msgTypes = make([]protoimpl.MessageInfo, 2)
+var file_gapi_annotation_proto_goTypes = []interface{}{
 	(FIELD_BIND)(0),                     // 0: gapi.FIELD_BIND
 	(*CustomPattern)(nil),               // 1: gapi.CustomPattern
 	(*Http)(nil),                        // 2: gapi.Http
@@ -522,7 +522,7 @@ var file_gapi_annonation_proto_goTypes = []interface{}{
 	(*descriptorpb.ServiceOptions)(nil), // 4: google.protobuf.ServiceOptions
 	(*descriptorpb.FieldOptions)(nil),   // 5: google.protobuf.FieldOptions
 }
-var file_gapi_annonation_proto_depIdxs = []int32{
+var file_gapi_annotation_proto_depIdxs = []int32{
 	1,  // 0: gapi.Http.custom:type_name -> gapi.CustomPattern
 	3,  // 1: gapi.http:extendee -> google.protobuf.MethodOptions
 	4,  // 2: gapi.server:extendee -> google.protobuf.ServiceOptions
@@ -544,13 +544,13 @@ var file_gapi_annonation_proto_depIdxs = []int32{
 	0,  // [0:1] is the sub-list for field type_name
 }
 
-func init() { file_gapi_annonation_proto_init() }
-func file_gapi_annonation_proto_init() {
-	if File_gapi_annonation_proto != nil {
+func init() { file_gapi_annotation_proto_init() }
+func file_gapi_annotation_proto_init() {
+	if File_gapi_annotation_proto != nil {
 		return
 	}
 	if !protoimpl.UnsafeEnabled {
-		file_gapi_annonation_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
+		file_gapi_annotation_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*CustomPattern); i {
 			case 0:
 				return &v.state
@@ -562,7 +562,7 @@ func file_gapi_annonation_proto_init() {
 				return nil
 			}
 		}
-		file_gapi_annonation_proto_msgTypes[1].Exporter = func(v interface{}, i int) interface{} {
+		file_gapi_annotation_proto_msgTypes[1].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*Http); i {
 			case 0:
 				return &v.state
@@ -575,7 +575,7 @@ func file_gapi_annonation_proto_init() {
 			}
 		}
 	}
-	file_gapi_annonation_proto_msgTypes[1].OneofWrappers = []interface{}{
+	file_gapi_annotation_proto_msgTypes[1].OneofWrappers = []interface{}{
 		(*Http_Get)(nil),
 		(*Http_Post)(nil),
 		(*Http_Put)(nil),
@@ -587,20 +587,20 @@ func file_gapi_annonation_proto_init() {
 	out := protoimpl.TypeBuilder{
 		File: protoimpl.DescBuilder{
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: file_gapi_annonation_proto_rawDesc,
+			RawDescriptor: file_gapi_annotation_proto_rawDesc,
 			NumEnums:      1,
 			NumMessages:   2,
 			NumExtensions: 11,
 			NumServices:   0,
 		},
-		GoTypes:           file_gapi_annonation_proto_goTypes,
-		DependencyIndexes: file_gapi_annonation_proto_depIdxs,
-		EnumInfos:         file_gapi_annonation_proto_enumTypes,
-		MessageInfos:      file_gapi_annonation_proto_msgTypes,
-		ExtensionInfos:    file_gapi_annonation_proto_extTypes,
+		GoTypes:           file_gapi_annotation_proto_goTypes,
+		DependencyIndexes: file_gapi_annotation_proto_depIdxs,
+		EnumInfos:         file_gapi_annotation_proto_enumTypes,
+		MessageInfos:      file_gapi_annotation_proto_msgTypes,
+		ExtensionInfos:    file_gapi_annotation_proto_extTypes,
 	}.Build()
-	File_gapi_annonation_proto = out.File
-	file_gapi_annonation_proto_rawDesc = nil
-	file_gapi_annonation_proto_goTypes = nil
-	file_gapi_annonation_proto_depIdxs = nil
+	File_gapi_annotation_proto = out.File
+	file_gapi_annotation_proto_rawDesc = nil
+	file_gapi_annotation_proto_goTypes = nil
+	file_gapi_annotation_proto_depIdxs = nil
 }
